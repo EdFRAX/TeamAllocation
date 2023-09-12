@@ -98,7 +98,7 @@ const Content = () => {
   }
 
   const handleEmployee = (event) => {
-    const transformEmployee = employees.map((e) => e.id === parseInt(event.currentTarget.id)?(e.teamName === selectedTeam)?{...e, teamName:''}:{...e, teamName: selectedTeam}:e);
+    const transformEmployee = employees.map((e) => e.id === parseInt(event.currentTarget.id) ? (e.teamName === selectedTeam) ? { ...e, teamName: '' } : { ...e, teamName: selectedTeam } : e);
 
     setEmployees(transformEmployee);
   }
